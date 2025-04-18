@@ -59,9 +59,10 @@
         /* Set the color and padding of the container */
         .content {
             background-color: white;
-            padding: 4rem;
+            padding: 2rem;
             text-align: center;
-            margin-top: 10%;
+            margin-top: 5%;
+            max-width: 80%;
         }
 
         /* Prevent CSS leaks */
@@ -93,18 +94,22 @@
                     </path>
                 </svg>
                 </a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-                <div class="content">
-                    <h1 class="display-2">R2DT</h1>
+                <div class="content" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                        <h1 class="display-4" style="color: #393185; font-family: 'Helvetica Neue', sans-serif; font-weight: bold; margin: 0;">R2DT</h1>
+                    </div>
                     <p class="lead">Visualise RNA secondary structure in consistent, recogniseable and reproducible layouts</p>
-                    <a href="https://docs.r2dt.bio" class="btn btn-primary btn-lg">Docs</a>
-                    <a href="https://github.com/r2dt-bio/r2dt" class="btn btn-dark btn-lg">GitHub</a>
-                    <a href="https://academic.oup.com/nar/article/53/4/gkaf032/8005627" class="btn btn-success btn-lg position-relative">R2DT 2.0 paper
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                    <a href="https://docs.r2dt.bio" class="btn btn-outline-primary">Docs</a>
+                    <a href="https://github.com/r2dt-bio/r2dt" class="btn btn-outline-dark">GitHub</a>
+                    <a href="https://academic.oup.com/nar/article/53/4/gkaf032/8005627" class="btn btn-outline-success position-relative" target="_blank">R2DT 2.0 paper
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
                             New!
-                            <span class="visually-hidden">New paper about R2DT 2.0</span>
+                            <span class="visually-hidden">Latest paper</span>
                           </span>
                     </a>
                     <div class="mt-4">
+                        <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; background-color: #f8f9fa;">
+                            <h2 class="h4">Enter a sequence, structure optional</h2>
                         <r2dt-web
                         customStyle='{ "titleColor": "black" }'
                         examples='[
@@ -119,6 +124,7 @@
                         />
                         <script type="text/javascript"
                                 src="https://rnacentral.github.io/r2dt-web/dist/r2dt-web.js"></script>
+                            </div>
                     </div>
                 </div>
             </div>
